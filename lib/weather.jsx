@@ -3,9 +3,9 @@ import React from 'react';
 class Weather extends React.Component {
   constructor (props) {
     super(props);
-
     this.getWeather = this.getWeather.bind(this);
     this.setWeather = this.setWeather.bind(this);
+
     this.state = {
       location: "",
       weather: "",

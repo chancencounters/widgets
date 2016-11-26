@@ -1,0 +1,116 @@
+body, section, article, h1, div, main, span, ul, p {
+  margin: 0;
+  border: 0;
+  padding: 0;
+
+  font: inherit;
+  text-align: inherit;
+  color: inherit;
+  text-decoration: inherit;
+
+  background: transparent;
+}
+
+body {
+  background-image: url('../assets/imgs/background.jpg')
+}
+
+.widgets {
+  display: flex;
+  justify-content: space-between;;
+  align-items: center;
+  width: 1500px;
+  height: 500px;
+  /*flex-wrap: wrap;*/
+  margin: auto;
+}
+
+.tabs {
+  flex: 100%;
+  max-width: 500px;
+}
+
+.tabs ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.tabs li {
+  flex:auto;
+  padding: 10px;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  color: #4A934E;
+}
+
+.tabs ul li:last-child {
+  border-right: 1px solid black;
+}
+
+.tab-content {
+  background-image: url("../assets/imgs/forest.jpg");
+  height: 150px;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  justify-content: center;
+}
+
+.tab-content p {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-weight: 700;
+  color: #4A934E;
+}
+
+.tabs li:hover {
+  background: #7BA484;
+  color: #4A934E;
+  cursor: pointer;
+
+}
+
+.clock {
+  width: 600px;
+  border: 1px solid black;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-image: url('../assets/imgs/time.jpg');
+  background-size: cover;
+
+}
+
+.clock span{
+  display: flex;
+}
+
+.clock p  {
+  color: #4A934E;
+  height: 49px;
+  margin: 20px;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: justify;
+}
+
+.clock span:last-child {
+  align-items: flex-end;
+  vertical-align: bottom;
+}

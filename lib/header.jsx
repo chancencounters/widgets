@@ -6,7 +6,7 @@ const Header = ({ tabs, handleClickEvent }) => {
       {
         tabs.map((tab, idx) => (
           <li key={ idx } onClick={ () => { handleClickEvent(idx) }}>
-            <h1>{ tab.title }</h1>
+            <p>{ tab.title }</p>
           </li>)
         )
       }
